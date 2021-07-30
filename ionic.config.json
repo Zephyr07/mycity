@@ -1,0 +1,7 @@
+{
+  "name": "mycity",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
