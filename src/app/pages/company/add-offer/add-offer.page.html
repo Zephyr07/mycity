@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Nouvelle offre
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Nouvelle offre</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Nom</ion-label>
+        <ion-input placeholder="Nom de l'entreprise"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Type</ion-label>
+        <ion-select value="product" okText="Valider" cancelText="Annuler">
+          <ion-select-option value="product">Produit</ion-select-option>
+          <ion-select-option value="service">Service</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Prix</ion-label>
+        <ion-input type="number" placeholder="Prix"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Entreprise</ion-label>
+        <ion-select placeholder="Choix de l'entreprise" okText="Valider" cancelText="Annuler">
+          <ion-select-option value="product">Dynamics</ion-select-option>
+          <ion-select-option value="service">Wiicod</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- Textarea in an item with a floating label -->
+      <ion-item>
+        <ion-label position="stacked">Descriptio</ion-label>
+        <ion-textarea placeholder="Description du produit/service"></ion-textarea>
+      </ion-item>
+
+
+    </ion-card-content>
+    <ion-button expand="block">Enregistrer</ion-button>
+  </ion-card>
+</ion-content>

@@ -1,9 +1,36 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>add-company</ion-title>
+    <ion-title>
+      Nouvelle entreprise
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Nouvelle entreprise</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Nom</ion-label>
+        <ion-input placeholder="Nom de l'entreprise"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Téléphone</ion-label>
+        <ion-input type="number" placeholder="Téléphone"></ion-input>
+      </ion-item>
+
+      <!-- Textarea in an item with a floating label -->
+      <ion-item>
+        <ion-label position="stacked">A propos</ion-label>
+        <ion-textarea placeholder="Secteur d'activité de l'entreprise"></ion-textarea>
+      </ion-item>
+
+    </ion-card-content>
+    <ion-button expand="block">Enregistrer</ion-button>
+  </ion-card>
 </ion-content>

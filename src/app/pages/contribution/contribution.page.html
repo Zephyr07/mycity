@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Mes contributions
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="card-background-page">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Mes contributions</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="ion-activatable ripple-parent" routerLink="list-company">
+    <img src="assets/images/entreprise.png"/>
+    <div class="card-title">41 Entreprises</div>
+    <ion-ripple-effect></ion-ripple-effect>
+  </ion-card>
+
+  <ion-card class="ion-activatable ripple-parent" routerLink="list-offer/product">
+    <img src="assets/images/produit.jpg"/>
+    <div class="card-title">64 Produits</div>
+    <ion-ripple-effect></ion-ripple-effect>
+  </ion-card>
+
+  <ion-card class="ion-activatable ripple-parent" routerLink="list-offer/service">
+    <img src="assets/images/services.jpg"/>
+    <div class="card-title">72 Services</div>
+    <ion-ripple-effect></ion-ripple-effect>
+  </ion-card>
+
+</ion-content>
+
